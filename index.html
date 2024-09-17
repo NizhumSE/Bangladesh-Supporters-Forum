@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Logo</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .logo-container {
+            width: 100%;
+            max-width: 600px; /* Maximum width of the logo */
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto; /* Ensures the image retains its aspect ratio */
+        }
+
+        @media (max-width: 768px) {
+            .logo-container {
+                max-width: 80%; /* Adjust size on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-container {
+                max-width: 60%; /* Adjust size on mobile screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- Replace the source with your actual logo URL -->
+        <img src="bsf&dg.png" alt="Responsive Logo">
+    </div>
+</body>
+</html>
